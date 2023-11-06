@@ -11,40 +11,25 @@ This project aims to use a given image database with chosen parameters using com
 1. [Project Motivation](#project-motivation)
 2. [Libraries](#libraries)
 3. [File Descriptions](#files)
-4. [Content](#content)
-5. [References](#references)
 
 ### Project Motivation
 >This project is being done as a part of the Udacity AI Programming with Python Project. It involves developing an image classifier built with PyTorch, then converting it into a command line application.
 
 ### Libraries <a name="libraries"></a>
-    Pandas
+    PyTorch
     Numpy
     Matplotlib
-    sklearn
+    Seaborn
+    Pillow
 
 ### File descriptions <a name="files"></a>
 
-* Udacity Data Scientist Nanodegree Capstone Project.ipynb: Jupyter notebook containing main implementation and analysis.
-* data/admissions.csv: CSV file containing Hospital Admissions.
-* data/patients.csv: CSV file containing Patient Demographics
-* data/icustays.csv: CSV file containing Patients ICU Stay Information.
-
-
-### Content <a name="content"></a>
-
-The project is organized with the following steps:
-
-    I. Business Understanding
-    II. Data Understanding
-    III. Data Preparation
-    IV. Data Modeling
-    V. Results Evaluation
-    VI. Conclusion and Discussion
-
-
-* Full report can be found in my blog:
-https://medium.com/@navidebra/hospital-mortality-rate-predictor-383c64e6998
-
-### References <a name="references"></a>
-1. Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2022). MIMIC-IV Clinical Database Demo (version 1.0). PhysioNet. https://doi.org/10.13026/jwtp-v091
+* Image Classifier Project.ipynb: Jupyter notebook containing main implementation and analysis.
+* flowers/test: Folders containing images for testing.
+* flowers/train: Folders containing images for training.
+* flowers/valid: Folders containing images for validation.
+* utils.py: File containing utility functions.
+* train.py: File that can be used from Command Line to train a neural network with the given parameters.
+    (sample: --data_dir /data --arch vgg16 --save_dir dir/output --learning_rate 0.01 --hidden_units 1024 --epochs 5 --gpu True)
+* predict.py: File that can be used from Command Line to predict using the trained neural network with the given parameters.
+    (sample: --image_path flower/1/img.jpg --checkpoint --checkpoint.pth --top_k 5 --category_names cat_to_name.json --gpu True)

@@ -13,7 +13,7 @@ This project aims to use a given image database with chosen parameters using com
 3. [File Descriptions](#files)
 
 ### Project Motivation
->This project is being done as a part of the Udacity AI Programming with Python Project. It involves developing an image classifier built with PyTorch, then converting it into a command line application.
+>This project was being done as a part of the Udacity AI Programming with Python Project. It involves developing an image classifier built with PyTorch, then converting it into a command line application.
 
 ### Libraries <a name="libraries"></a>
     PyTorch
